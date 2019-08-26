@@ -1,0 +1,242 @@
+                /* <a href="https://github.com/gabrieldiasdeabreu" class="info">github</a> */
+
+body{
+    /* color: rgb(255, 41, 41); */
+    background-image: url("photo-1526628953301-3e589a6a8b74.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.nav {
+    opacity: 0.85;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "item1 item2";
+    justify-content: space-evenly;
+    /* flex-direction: row;     */
+    /* justify-content: space-around; */
+    background-color: #e4d8c2;
+    /* padding: 10px; */
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    animation-name: bioEsq;
+    animation-duration: 500ms;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        grid-template-areas: "item2"
+        "item1"
+        ;
+        /* justify-content: center; */
+    }
+    /* .MyPhoto{
+        grid-area: 1;
+    }
+    .nav{
+        grid-area: 2;
+    } */
+}
+
+
+.name{
+    font-size: 2rem;
+    font-weight: bold;
+    /* padding: 5px; */
+    /* margin: 5px; */
+    color: rgb(0, 0, 0);
+}
+
+.info{
+    color: rgb(75, 66, 66);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-size: 1.2rem;
+}
+
+.bio {
+    grid-area: item1;
+    padding: 30px;
+    /* display: inline-grid; */
+    /* display: flex;         */
+}
+
+.linhaBio{
+    display: grid;
+}
+
+
+/* .inicioNav {
+    /* justify-content: start; */
+    /* grid-column-start: 1;
+    grid-column-end: 2;  */
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width:  200px; */
+    /* justify-content: flex-start; */
+/* } */
+
+/* .fimNav {
+    /* grid-column-start: 2;
+    grid-column-end: 3;  */
+    /* justify-content: end; */
+
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: flex-end; */
+    /* width: 200px; */
+/* } */
+
+.endereco{
+    display: grid;
+    
+}
+
+.rua{        
+    margin: 5px;
+    grid-column-start: 1;
+    grid-column-end: 6;   
+
+}
+.cidade{
+    grid-column-start: 3;
+    grid-column-end: 6;   
+}
+
+
+.itemFimNav {
+    display: grid;
+}
+
+.MyPhoto{
+    
+    /* padding: 50px; */
+    margin: 30px;
+    grid-area: item2;
+    border-radius: 50px;
+    /* size: 50%; */
+    /* height: 20%; */
+    width: 200px;
+    /* justify-content: flex-end; */
+    /* border: 5; */
+}
+
+.text{
+    font-size: 50px;
+}
+
+.portfolioGrid{
+    display: grid;
+    grid-template-areas: "item1 item2";
+}
+
+@media only screen and (max-width: 600px) {
+    .portfolioGrid {
+        grid-template-areas: "item2"
+        "item1";
+        justify-content: center;        
+    }
+    /* .MyPhoto{
+        grid-area: 1;
+    }
+    .nav{
+        grid-area: 2;
+    } */
+}
+
+/* @media only screen and (max-width: 300px) {
+    .portfolioGrid {
+        grid-template-areas: "item2"
+        "item1";
+        justify-content: center;
+    } */
+
+.project{  
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    opacity: 0.85;
+    background-color:#c0b5cf;
+    margin: 5px;
+    padding: 25px;
+    border-radius: 5px;
+    animation-name: projetosDir;
+    animation-duration: 500ms;
+}
+
+/* .project:visible {
+    animation-name: example;
+    animation-duration: 2s;
+} */
+
+.project:hover { border: solid 5px black; }
+
+@keyframes projetosDir {
+    /* 0%   { transform: translate(-1000%, 0); }
+  100% { transform: translate( 0%, 0); } */
+    0%   { opacity: 0; transform: translate(-1000%, 0); }
+    /* 25%  { opacity: 0.2; } */
+    /* 50%  { opacity: 0.5; } */
+    /* 75%  { opacity: 0.8; } */
+    100% { opacity:0.8; transform: translate( 0%, 0);}
+  }
+
+  @keyframes bioEsq {
+    /* 0%   { transform: translate(-1000%, 0); }
+  100% { transform: translate( 0%, 0); } */
+    0%   { opacity: 0; transform: translate(1000%, 0); }
+    /* 25%  { opacity: 0.2; } */
+    /* 50%  { opacity: 0.5; } */
+    /* 75%  { opacity: 0.8; } */
+    100% { opacity:0.8; transform: translate( 0%, 0);}
+  }
+
+.fotoProjeto{
+    width: 75%;
+}
+
+.descriptionProject{
+    font-size: 18px;
+    text-align: center;
+    /* flex: center;         */
+}
+
+.titleProject {
+    padding: 5px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.icon{
+    width: 25px;
+    padding: 10px;
+}
+
+.divider{    
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    background-color:#4d425d;
+    animation-name: dividerAppears;
+    animation-duration: 500ms;
+    opacity: 0.85;
+}
+
+@keyframes dividerAppears {
+    /* 0%   { transform: translate(-1000%, 0); }
+  100% { transform: translate( 0%, 0); } */
+    0%   { opacity: 0; }
+    /* 25%  { opacity: 0.2; } */
+    /* 50%  { opacity: 0.5; } */
+    /* 75%  { opacity: 0.8; } */
+    100% { opacity:0.85;}
+  }
