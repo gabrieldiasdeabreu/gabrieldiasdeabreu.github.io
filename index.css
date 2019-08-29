@@ -2,7 +2,7 @@
 
 body{
     /* color: rgb(255, 41, 41); */
-    background-image: url("photo-1526628953301-3e589a6a8b74.jpg");
+    background-image: url("img/photo-1526628953301-3e589a6a8b74.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -23,6 +23,11 @@ body{
     border-top-left-radius: 50px;
     animation-name: bioEsq;
     animation-duration: 500ms;
+}
+
+.nav:hover { 
+    opacity: 1;
+    border: solid 5px black; 
 }
 
 @media only screen and (max-width: 600px) {
@@ -131,7 +136,21 @@ body{
 
 .portfolioGrid{
     display: grid;
-    grid-template-areas: "item1 item2";
+    grid-template-areas: "item1 item2 item3";
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .portfolioGrid {
+        grid-template-areas: "item2 item1";
+        justify-content: center;        
+    }
+    /* .MyPhoto{
+        grid-area: 1;
+    }
+    .nav{
+        grid-area: 2;
+    } */
 }
 
 @media only screen and (max-width: 600px) {
@@ -173,7 +192,10 @@ body{
     animation-duration: 2s;
 } */
 
-.project:hover { border: solid 5px black; }
+.project:hover { 
+    opacity: 1;
+    border: solid 5px black; 
+}
 
 @keyframes projetosDir {
     /* 0%   { transform: translate(-1000%, 0); }
@@ -202,6 +224,7 @@ body{
 .descriptionProject{
     font-size: 18px;
     text-align: center;
+    display: hide;
     /* flex: center;         */
 }
 
@@ -240,3 +263,10 @@ body{
     /* 75%  { opacity: 0.8; } */
     100% { opacity:0.85;}
   }
+
+.skills{
+    margin-top: 5px;
+    text-align: end;
+    font-weight: bold;
+
+}  
