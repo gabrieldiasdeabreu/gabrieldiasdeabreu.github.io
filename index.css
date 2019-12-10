@@ -17,7 +17,9 @@ body{
     justify-content: space-evenly;
     /* flex-direction: row;     */
     /* justify-content: space-around; */
-    background-color: #e4d8c2;
+    background-color: #f5fffa ;
+    /* #e4d8c2; */
+    
     /* padding: 10px; */
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
@@ -179,7 +181,8 @@ body{
     justify-content: center;
     justify-items: center;
     opacity: 0.85;
-    background-color:#c0b5cf;
+    background-color:whitesmoke;
+    /* #c0b5cf; */
     margin: 5px;
     padding: 25px;
     border-radius: 5px;
@@ -248,7 +251,8 @@ body{
     font-size: 32px;
     text-align: center;
     font-weight: bold;
-    background-color:#4d425d;
+    background-color:#00bfff;
+    /* #4d425d; */
     animation-name: dividerAppears;
     animation-duration: 500ms;
     opacity: 0.85;
